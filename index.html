@@ -1,35 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>ATTY. DONNABEL C. TENORIO</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-<style>
 
 body{
-    margin:0;
+margin:0;
+    background:#ffffff;
     background:#f7f7f7;
-    font-family:'Inter', sans-serif;
-    color:#111;
+font-family:'Inter', sans-serif;
+color:#111;
 }
 
+/* MAIN CARD */
 /* CARD */
 .card{
-    max-width:420px;
+max-width:420px;
+    margin:auto;
+    padding:30px 20px;
     margin:30px auto;
     background:#fff;
     border-radius:18px;
     padding:28px 20px;
     box-shadow:0 10px 30px rgba(0,0,0,0.05);
-    text-align:center;
+text-align:center;
 }
 
 /* LOGO */
 .logo{
+    width:85px;
+    height:85px;
+    margin:10px auto 15px;
     width:78px;
     height:78px;
     margin:5px auto 12px;
@@ -38,16 +34,21 @@ body{
 
 /* NAME */
 .name{
+    font-size:22px;
     font-size:20px;
-    font-weight:600;
+font-weight:600;
+    letter-spacing:1px;
+    margin-top:10px;
     letter-spacing:0.8px;
     margin-top:8px;
 }
 
 /* TITLE */
 .title{
+    font-size:14px;
     font-size:13px;
-    color:#666;
+color:#666;
+    margin-top:5px;
     margin-top:4px;
     letter-spacing:2px;
     text-transform:uppercase;
@@ -61,25 +62,32 @@ body{
     margin:18px auto;
 }
 
+/* ACTION ICONS */
 /* ACTIONS */
 .actions{
-    display:flex;
-    justify-content:center;
+display:flex;
+justify-content:center;
+    gap:25px;
+    margin:25px 0;
     gap:18px;
     margin:18px 0 22px;
 }
 
 .icon-btn{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    border:1px solid #e5e5e5;
     width:52px;
     height:52px;
     border-radius:14px;
     border:1px solid #e6e6e6;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-decoration:none;
-    color:#111;
-    font-size:18px;
+display:flex;
+align-items:center;
+justify-content:center;
+text-decoration:none;
+color:#111;
+font-size:18px;
     background:#fff;
     transition:0.2s;
 }
@@ -91,12 +99,19 @@ body{
 
 /* ADD CONTACT */
 .add-contact{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    border:1px solid #e5e5e5;
     display:block;
-    padding:12px;
+padding:12px;
+    border-radius:10px;
     border-radius:12px;
     border:1px solid #111;
-    text-decoration:none;
-    color:#111;
+text-decoration:none;
+color:#111;
+    margin-bottom:25px;
     font-weight:500;
     margin-bottom:18px;
     transition:0.2s;
@@ -107,35 +122,41 @@ body{
     color:#fff;
 }
 
+/* LIST */
 /* SECTION */
 .section{
-    text-align:left;
+text-align:left;
+    margin-top:20px;
     margin-top:10px;
 }
 
 .item{
-    display:flex;
+display:flex;
+    align-items:flex-start;
+    gap:12px;
     gap:10px;
-    padding:12px 0;
-    border-bottom:1px solid #f0f0f0;
+padding:12px 0;
+border-bottom:1px solid #f0f0f0;
 }
 
+.item i{
+    width:22px;
 /* ICON */
 .item .icon{
     width:20px;
     color:#666;
-    margin-top:2px;
+margin-top:2px;
+    color:#444;
 }
 
 /* TEXT */
 .label{
-    font-size:12px;
-    color:#888;
-}
-
+font-size:12px;
+color:#888;
+@@ -110,29 +136,49 @@
 .value{
-    font-size:14px;
-    color:#111;
+font-size:14px;
+color:#111;
     line-height:1.4;
 }
 
@@ -148,23 +169,28 @@ body{
 
 /* FIND ME */
 .find{
+    margin-top:25px;
     margin-top:18px;
-    text-align:left;
+text-align:left;
 }
 
 .find-title{
+    font-size:13px;
+    font-weight:600;
     font-size:12px;
     letter-spacing:2px;
     color:#777;
-    margin-bottom:10px;
+margin-bottom:10px;
 }
 
 .socials{
-    display:flex;
+display:flex;
+    gap:15px;
     gap:16px;
 }
 
 .socials a{
+    font-size:18px;
     width:36px;
     height:36px;
     border-radius:10px;
@@ -172,8 +198,8 @@ body{
     display:flex;
     align-items:center;
     justify-content:center;
-    text-decoration:none;
-    color:#111;
+text-decoration:none;
+color:#111;
     font-size:16px;
 }
 
@@ -182,19 +208,11 @@ body{
 }
 
 </style>
-</head>
-
-<body>
-
-<div class="card">
-
-<!-- LOGO -->
-<img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Justice_scale_icon.png/600px-Justice_scale_icon.png">
-
-<!-- NAME -->
+@@ -149,57 +195,59 @@
 <div class="name">DONNABEL TENORIO</div>
 <div class="title">Lawyer</div>
 
+<!-- ICON ACTIONS -->
 <div class="divider"></div>
 
 <!-- ACTIONS -->
@@ -202,12 +220,14 @@ body{
 
 <a class="icon-btn" href="#" onclick="callMenu()">📞</a>
 <a class="icon-btn" href="#" onclick="emailMenu()">✉</a>
+<a class="icon-btn" href="https://maps.google.com/?q=789+J.P.+Rizal+Street+Makati+City" target="_blank">📍</a>
 <a class="icon-btn" href="https://maps.google.com/?q=789+J.P.+Rizal+Street+Makati+City">📍</a>
 
 </div>
 
 <!-- ADD CONTACT -->
 <a class="add-contact" href="contact.vcf" download>
+👤 Add Contact
 Add Contact
 </a>
 
@@ -215,6 +235,7 @@ Add Contact
 <div class="section">
 
 <div class="item">
+<div>☎</div>
 <div class="icon">☎</div>
 <div>
 <div class="label">Landline</div>
@@ -223,6 +244,7 @@ Add Contact
 </div>
 
 <div class="item">
+<div>📞</div>
 <div class="icon">📞</div>
 <div>
 <div class="label">Office</div>
@@ -231,6 +253,7 @@ Add Contact
 </div>
 
 <div class="item">
+<div>📞</div>
 <div class="icon">📞</div>
 <div>
 <div class="label">Office</div>
@@ -239,6 +262,7 @@ Add Contact
 </div>
 
 <div class="item">
+<div>📞</div>
 <div class="icon">📞</div>
 <div>
 <div class="label">Other</div>
@@ -247,64 +271,23 @@ Add Contact
 </div>
 
 <div class="item">
+<div>✉</div>
 <div class="icon">✉</div>
 <div>
 <div class="label">Email</div>
 <div class="value">cristaltenoriolawoffice@yahoo.com</div>
-<div class="value">cristaltenoriolawoffice@gmail.com</div>
-</div>
+@@ -208,13 +256,13 @@
 </div>
 
 <div class="item">
+<div>📍</div>
 <div class="icon">📍</div>
 <div>
 <div class="label">Location</div>
 <div class="value">
 789 J.P. Rizal Street, Makati City, NCR 1208, Philippines
 </div>
+<a href="https://maps.google.com/?q=789+J.P.+Rizal+Street+Makati+City">Show on Map</a>
 <a class="map-link" href="https://maps.google.com/?q=789+J.P.+Rizal+Street+Makati+City">View Map</a>
 </div>
 </div>
-
-</div>
-
-<!-- FIND ME -->
-<div class="find">
-
-<div class="find-title">Find me on</div>
-
-<div class="socials">
-
-<a href="https://www.facebook.com/cristal.tenorio.75">📘</a>
-<a href="https://m.me/cristal.tenorio.75">💬</a>
-<a href="https://wa.me/639917924302">🟢</a>
-<a href="viber://chat?number=%2B639917924302">📞</a>
-
-</div>
-
-</div>
-
-</div>
-
-<script>
-
-function callMenu(){
-    let c = prompt("Call:\n1 Landline\n2 Office 1\n3 Office 2\n4 Other");
-
-    if(c=="1") location.href="tel:0272571802";
-    if(c=="2") location.href="tel:+639917924302";
-    if(c=="3") location.href="tel:+639338124210";
-    if(c=="4") location.href="tel:+639338854529";
-}
-
-function emailMenu(){
-    let e = prompt("Email:\n1 Yahoo\n2 Gmail");
-
-    if(e=="1") location.href="mailto:cristaltenoriolawoffice@yahoo.com";
-    if(e=="2") location.href="mailto:cristaltenoriolawoffice@gmail.com";
-}
-
-</script>
-
-</body>
-</html>
