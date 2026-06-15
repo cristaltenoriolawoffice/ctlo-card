@@ -3,131 +3,182 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CTLO - Law Office</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<title>ATTY. DONNABEL C. TENORIO</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
+
 body{
-margin:0;
-font-family:'Cormorant Garamond', serif;
-background:#fff;
-color:#111;
+    margin:0;
+    background:#f7f7f7;
+    font-family:'Inter', sans-serif;
+    color:#111;
 }
 
-.container{
-max-width:460px;
-margin:auto;
-padding:45px 22px;
-text-align:center;
+/* CARD */
+.card{
+    max-width:420px;
+    margin:30px auto;
+    background:#fff;
+    border-radius:18px;
+    padding:28px 20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+    text-align:center;
 }
 
-/* NAME - FORCE SINGLE LINE */
+/* LOGO */
+.logo{
+    width:78px;
+    height:78px;
+    margin:5px auto 12px;
+    opacity:0.9;
+}
+
+/* NAME */
 .name{
-font-size:24px;
-font-weight:600;
-letter-spacing:1px;
-margin-bottom:8px;
-white-space:nowrap;   /* 🔥 prevents line break */
-overflow:hidden;
-text-overflow:ellipsis;
+    font-size:20px;
+    font-weight:600;
+    letter-spacing:0.8px;
+    margin-top:8px;
 }
 
 /* TITLE */
 .title{
-font-size:14px;
-letter-spacing:2px;
-text-transform:uppercase;
-color:#444;
-margin-bottom:4px;
+    font-size:13px;
+    color:#666;
+    margin-top:4px;
+    letter-spacing:2px;
+    text-transform:uppercase;
 }
 
-/* LAW OFFICE */
-.office{
-font-size:16px;
-margin-bottom:20px;
-color:#111;
-}
-
-.line{
-width:60px;
-height:1px;
-background:#111;
-margin:20px auto;
+/* DIVIDER */
+.divider{
+    width:60px;
+    height:1px;
+    background:#ddd;
+    margin:18px auto;
 }
 
 /* ACTIONS */
 .actions{
-display:flex;
-justify-content:space-between;
-margin:20px 0;
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    margin:18px 0 22px;
 }
 
-.actions a{
-text-decoration:none;
-color:#111;
-font-size:13px;
-width:33%;
+.icon-btn{
+    width:52px;
+    height:52px;
+    border-radius:14px;
+    border:1px solid #e6e6e6;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    color:#111;
+    font-size:18px;
+    background:#fff;
+    transition:0.2s;
 }
 
-.actions i{
-display:block;
-font-size:18px;
-margin-bottom:6px;
+.icon-btn:hover{
+    transform:scale(1.05);
+    border-color:#bbb;
 }
 
-/* BUTTON */
+/* ADD CONTACT */
 .add-contact{
-display:block;
-margin:25px 0;
-padding:14px;
-border:1px solid #111;
-text-decoration:none;
-color:#111;
-letter-spacing:1px;
-transition:0.3s;
+    display:block;
+    padding:12px;
+    border-radius:12px;
+    border:1px solid #111;
+    text-decoration:none;
+    color:#111;
+    font-weight:500;
+    margin-bottom:18px;
+    transition:0.2s;
 }
 
 .add-contact:hover{
-background:#111;
-color:#fff;
+    background:#111;
+    color:#fff;
 }
 
-/* CARDS */
-.card{
-border-top:1px solid #eee;
-padding:18px 0;
-text-align:left;
-}
-
-.card h3{
-font-size:13px;
-letter-spacing:2px;
-margin-bottom:10px;
+/* SECTION */
+.section{
+    text-align:left;
+    margin-top:10px;
 }
 
 .item{
-margin:8px 0;
-font-size:15px;
+    display:flex;
+    gap:10px;
+    padding:12px 0;
+    border-bottom:1px solid #f0f0f0;
 }
 
-.item a{
-text-decoration:none;
-color:#111;
+/* ICON */
+.item .icon{
+    width:20px;
+    color:#666;
+    margin-top:2px;
 }
 
-/* SOCIAL */
-.social{
-display:flex;
-justify-content:center;
-gap:25px;
-margin-top:25px;
-font-size:18px;
+/* TEXT */
+.label{
+    font-size:12px;
+    color:#888;
 }
 
-.social a{
-color:#111;
+.value{
+    font-size:14px;
+    color:#111;
+    line-height:1.4;
+}
+
+/* MAP LINK */
+.map-link{
+    font-size:13px;
+    color:#444;
+    text-decoration:underline;
+}
+
+/* FIND ME */
+.find{
+    margin-top:18px;
+    text-align:left;
+}
+
+.find-title{
+    font-size:12px;
+    letter-spacing:2px;
+    color:#777;
+    margin-bottom:10px;
+}
+
+.socials{
+    display:flex;
+    gap:16px;
+}
+
+.socials a{
+    width:36px;
+    height:36px;
+    border-radius:10px;
+    border:1px solid #e6e6e6;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    color:#111;
+    font-size:16px;
+}
+
+.socials a:hover{
+    border-color:#999;
 }
 
 </style>
@@ -135,80 +186,125 @@ color:#111;
 
 <body>
 
-<div class="container">
+<div class="card">
+
+<!-- LOGO -->
+<img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Justice_scale_icon.png/600px-Justice_scale_icon.png">
 
 <!-- NAME -->
-<div class="name">ATTY. DONNABEL CRISTAL TENORIO</div>
-
-<!-- SEPARATED TEXT -->
+<div class="name">DONNABEL TENORIO</div>
 <div class="title">Lawyer</div>
-<div class="office">Cristal Tenorio Law Office</div>
 
-<div class="line"></div>
+<div class="divider"></div>
 
-<!-- QUICK ACTIONS -->
+<!-- ACTIONS -->
 <div class="actions">
 
-<a href="tel:+639917924302">
-<i class="fa-solid fa-phone"></i>Call
-</a>
-
-<a href="mailto:cristaltenoriolawoffice@gmail.com">
-<i class="fa-solid fa-envelope"></i>Email
-</a>
-
-<a href="https://maps.google.com/?q=789+J.P.+Rizal+St+Makati+City" target="_blank">
-<i class="fa-solid fa-location-dot"></i>Map
-</a>
+<a class="icon-btn" href="#" onclick="callMenu()">📞</a>
+<a class="icon-btn" href="#" onclick="emailMenu()">✉</a>
+<a class="icon-btn" href="https://maps.google.com/?q=789+J.P.+Rizal+Street+Makati+City">📍</a>
 
 </div>
 
-<!-- SAVE CONTACT -->
+<!-- ADD CONTACT -->
 <a class="add-contact" href="contact.vcf" download>
-+ SAVE CONTACT
+Add Contact
 </a>
 
-<!-- CONTACT -->
-<div class="card">
-<h3>CONTACT</h3>
-
-<div class="item">Landline: <a href="tel:0272571802">(02) 725-71802</a></div>
-<div class="item">Office: <a href="tel:+639917924302">+63 991 7924 302</a></div>
-<div class="item">Office: <a href="tel:+639338124210">+63 933 8124 210</a></div>
-<div class="item">Other: <a href="tel:+639338549529">+63 933 8549 529</a></div>
-</div>
-
-<!-- EMAIL -->
-<div class="card">
-<h3>EMAIL</h3>
+<!-- DETAILS -->
+<div class="section">
 
 <div class="item">
-Yahoo:
-<a href="mailto:cristaltenoriolawoffice@yahoo.com">
-cristaltenoriolawoffice@yahoo.com
-</a>
+<div class="icon">☎</div>
+<div>
+<div class="label">Landline</div>
+<div class="value">(02) 725-71802</div>
+</div>
 </div>
 
 <div class="item">
-Gmail:
-<a href="mailto:cristaltenoriolawoffice@gmail.com">
-cristaltenoriolawoffice@gmail.com
-</a>
+<div class="icon">📞</div>
+<div>
+<div class="label">Office</div>
+<div class="value">+63 991 792 4302</div>
+</div>
+</div>
+
+<div class="item">
+<div class="icon">📞</div>
+<div>
+<div class="label">Office</div>
+<div class="value">+63 933 812 4210</div>
+</div>
+</div>
+
+<div class="item">
+<div class="icon">📞</div>
+<div>
+<div class="label">Other</div>
+<div class="value">+63 933 854 529</div>
+</div>
+</div>
+
+<div class="item">
+<div class="icon">✉</div>
+<div>
+<div class="label">Email</div>
+<div class="value">cristaltenoriolawoffice@yahoo.com</div>
+<div class="value">cristaltenoriolawoffice@gmail.com</div>
+</div>
+</div>
+
+<div class="item">
+<div class="icon">📍</div>
+<div>
+<div class="label">Location</div>
+<div class="value">
+789 J.P. Rizal Street, Makati City, NCR 1208, Philippines
+</div>
+<a class="map-link" href="https://maps.google.com/?q=789+J.P.+Rizal+Street+Makati+City">View Map</a>
+</div>
 </div>
 
 </div>
 
-<!-- SOCIAL -->
-<div class="social">
+<!-- FIND ME -->
+<div class="find">
 
-<a href="https://www.facebook.com/cristal.tenorio.75"><i class="fa-brands fa-facebook"></i></a>
-<a href="https://m.me/cristal.tenorio.75"><i class="fa-brands fa-facebook-messenger"></i></a>
-<a href="https://wa.me/639917924302"><i class="fa-brands fa-whatsapp"></i></a>
-<a href="viber://chat?number=%2B639917924302"><i class="fa-solid fa-phone"></i></a>
+<div class="find-title">Find me on</div>
+
+<div class="socials">
+
+<a href="https://www.facebook.com/cristal.tenorio.75">📘</a>
+<a href="https://m.me/cristal.tenorio.75">💬</a>
+<a href="https://wa.me/639917924302">🟢</a>
+<a href="viber://chat?number=%2B639917924302">📞</a>
 
 </div>
 
 </div>
+
+</div>
+
+<script>
+
+function callMenu(){
+    let c = prompt("Call:\n1 Landline\n2 Office 1\n3 Office 2\n4 Other");
+
+    if(c=="1") location.href="tel:0272571802";
+    if(c=="2") location.href="tel:+639917924302";
+    if(c=="3") location.href="tel:+639338124210";
+    if(c=="4") location.href="tel:+639338854529";
+}
+
+function emailMenu(){
+    let e = prompt("Email:\n1 Yahoo\n2 Gmail");
+
+    if(e=="1") location.href="mailto:cristaltenoriolawoffice@yahoo.com";
+    if(e=="2") location.href="mailto:cristaltenoriolawoffice@gmail.com";
+}
+
+</script>
 
 </body>
 </html>
