@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ATTY. DONNABEL C. TENORIO</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    margin:0;
+    padding:45px 20px;
+    background:#fff;
+    color:#000;
+    font-family:'Inter', sans-serif;
+    text-align:center;
+}
+
+.container{
+    max-width:520px;
+    margin:auto;
+}
+
+/* NAME */
+.name{
+    font-family:'Cormorant Garamond', serif;
+    font-size:38px;
+    font-weight:600;
+    line-height:1.1;
+}
+
+/* TITLE */
+.title{
+    margin-top:10px;
+    font-size:12px;
+    letter-spacing:3px;
+}
+
+/* OFFICE */
+.office{
+    margin-top:10px;
+    font-size:16px;
+}
+
+/* DIVIDER */
+.divider{
+    width:80px;
+    height:1px;
+    background:#000;
+    margin:25px auto;
+}
+
+/* BUTTONS */
+a{
+    color:#000;
+    text-decoration:none;
+}
+
+.btn{
+    display:block;
+    margin:12px auto;
+    padding:12px;
+    border:1px solid #000;
+    width:180px;
+    font-weight:500;
+}
+
+/* SAVE BUTTON */
+.save{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 18px;
+    border:1px solid #000;
+}
+
+/* FIND ME */
+.findme{
+    margin-top:40px;
+}
+
+.icons{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    font-size:20px;
+    margin-top:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="name">
+ATTY. DONNABEL C. TENORIO
+</div>
+
+<div class="title">
+LAWYER
+</div>
+
+<div class="office">
+Cristal Tenorio Law Office
+</div>
+
+<div class="divider"></div>
+
+<!-- ACTIONS -->
+<div>
+
+<a class="btn" href="#" onclick="showCallOptions()">📞 CALL</a>
+
+<a class="btn" href="#" onclick="showEmailOptions()">✉ EMAIL</a>
+
+<a class="btn"
+href="https://www.google.com/maps/search/?api=1&query=Unit+4+Mezzanine+Area+Estrera+Building+789+J.P.+Rizal+St+Poblacion+Makati+City"
+target="_blank">
+📍 MAP
+</a>
+
+</div>
+
+<!-- SAVE CONTACT -->
+<a class="save" href="contact.vcf" download>
+SAVE CONTACT
+</a>
+
+<!-- CONTACT INFO -->
+<div style="margin-top:35px;text-align:left;">
+
+<p><b>Landline:</b> (02) 725-71802</p>
+<p><b>Office:</b> +63 991 792 4302</p>
+<p><b>Office:</b> +63 933 812 4210</p>
+<p><b>Other:</b> +63 933 854 9529</p>
+
+<p><b>Email (Yahoo):</b> cristaltenoriolawoffice@yahoo.com</p>
+<p><b>Email (Gmail):</b> cristaltenoriolawoffice@gmail.com</p>
+
+<p><b>Address:</b><br>
+Unit 4 Mezzanine Area, Estrera Building<br>
+789 J. P. Rizal St, Brgy. Poblacion<br>
+Makati City, 1208 Metro Manila</p>
+
+</div>
+
+<!-- FIND ME -->
+<div class="findme">
+
+<div style="font-size:12px;letter-spacing:2px;">
+FIND ME
+</div>
+
+<div class="icons">
+
+<a href="https://www.facebook.com/cristal.tenorio.75" target="_blank">📘</a>
+
+<a href="https://m.me/cristal.tenorio.75" target="_blank">💬</a>
+
+<a href="https://wa.me/639917924302" target="_blank">🟢</a>
+
+<a href="viber://chat?number=%2B639917924302">📞</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- SCRIPT -->
+<script>
+
+function showCallOptions(){
+    let c = prompt(
+`Call:
+1 - Landline (02) 725-71802
+2 - Office 1
+3 - Office 2
+4 - Other`
+);
+
+    if(c=="1") window.location.href="tel:0272571802";
+    if(c=="2") window.location.href="tel:+639917924302";
+    if(c=="3") window.location.href="tel:+639338124210";
+    if(c=="4") window.location.href="tel:+639338549529";
+}
+
+function showEmailOptions(){
+    let e = prompt(
+`Email:
+1 - Yahoo
+2 - Gmail`
+);
+
+    if(e=="1") window.location.href="mailto:cristaltenoriolawoffice@yahoo.com";
+    if(e=="2") window.location.href="mailto:cristaltenoriolawoffice@gmail.com";
+}
+
+</script>
+
+</body>
+</html>
